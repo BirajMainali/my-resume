@@ -1,9 +1,3 @@
-/**
-* Template Name: MyResume - v2.1.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -250,11 +244,11 @@ h1, h2, h3, h4, h5, h6 {
   background: url("https://i.pinimg.com/originals/18/a4/94/18a4949fc9c8067172d3b96e302e7097.gif") top right no-repeat;
   background-size: cover;
   position: relative;
-  opacity: 0.75;
+  /*opacity: 0.75;*/
 }
-#hero:hover{
-    opacity: 1;
-}
+/*#hero:hover{*/
+/*    opacity: 1;*/
+/*}*/
 
 @media (min-width: 992px) {
   #hero {
@@ -594,7 +588,7 @@ section {
   bottom: 30px;
   transition: all ease-in-out 0.3s;
   z-index: 2;
-  opacity: 0;
+  /*opacity: 0;*/
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -677,7 +671,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
@@ -1177,16 +1171,15 @@ section {
   font-size: 13px;
 }
 .about-section-one{
-  opacity: 0.5;
-}
+/*  opacity: 0.5;*/
+/*}*/
 
-.about-section-one:hover{
-  opacity: 1;
-}
-.row{
-    opacity: 0.7;
-}
-.row:hover{
-    opacity: 1;
-}
-
+/*.about-section-one:hover{*/
+/*  opacity: 1;*/
+/*}*/
+/*.row{*/
+/*    opacity: 0.7;*/
+/*}*/
+/*.row:hover{*/
+/*    opacity: 1;*/
+/*}*/
