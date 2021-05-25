@@ -2,8 +2,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
-  font-family: "imprima", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  font-family: "poppins", sans-serif;
   color: #272829;
 }
 
@@ -14,10 +15,6 @@ a {
 a:hover {
   color: #067ded;
   text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "imprima", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -278,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #45505b;
   margin: 15px 0 0 0;
   font-size: 26px;
-  font-family: "imprima", sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 #hero p span {
@@ -375,7 +372,7 @@ section {
   font-weight: 700;
   font-size: 26px;
   color: #728394;
-  font-family: fira code;
+  font-family: "poppins";
 }
 
 .about .content ul {
@@ -431,7 +428,7 @@ section {
 .facts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "imprima", sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 14px;
 }
 
@@ -450,14 +447,14 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "imprima", sans-serif;
+  font-family: "poppins", sans-serif;
   color: #45505b;
 }
 
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
-  font-family: imprima;
+  font-family: "poppins";
 }
 
 .skills .progress-bar-wrap {
@@ -494,7 +491,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: lowercase;
-  font-family: "imprima", sans-serif;
+  font-family: "poppins", sans-serif;
   color: #0563bb;
   margin-bottom: 10px;
 }
@@ -1126,7 +1123,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   position: relative;
-  font-family: "imprima", sans-serif;
+  font-family: "poppins", sans-serif;
   padding: 0;
   margin: 0 0 15px 0;
 }
