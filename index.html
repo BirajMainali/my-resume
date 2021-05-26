@@ -74,7 +74,7 @@
           <div class="row">
             <div class="col-lg-4">
               <img src="assets/img/profile.png" class="img-fluid" alt="biraj mainali" 
-                style="height:310px;border-radius: 10%;  opacity: 2;">
+                style="height:310px;border-radius: 50%;  opacity: 2;">
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content">
               <h3>Full Stack Web Developer</h3>
@@ -505,7 +505,8 @@
               </div>
             </div>
             <div class="col-lg-8 mt-5 mt-lg-0">
-              <div class="php-email-form">
+             <form action="#" onSubmit="return false;">
+                <div class="php-email-form">
                 <div class="form-row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -524,15 +525,43 @@
                   <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                   <div class="validate"></div>
                 </div>
-                <div class="text-center"><button type="submit" onclick="Message();">Send Message</button></div>
+                <div class="text-center">
+                  <button type="submit" class="contact-message-send">Send Message</button>
+                </div>
               </div>
+             </form>
+              <br>
+              <span id="contact-troll-text" class="d-none text-primary" style="float: right">
+                don't think I wrote the code to handle form submit. Please just email or call me.
+               </span>
+               <span id="thank_message" class="d-none text-primary" style="float: right">
+                Thanks For Visiting my Website
+               </span>
+               <span id="still_here" class="d-none text-primary" style="float: right">
+                 Seriously are you still here :)
+               </span>
             </div>
             <br><br>             
           </div>
           <script> 
-            function Message(){
-              alert("Success!!, Please use Telegram for instant reply")
-            }
+          const btnElm = document.querySelector('.contact-message-send');
+          const contact_troll_text = document.querySelector('#contact-troll-text');
+          const thank_message = document.querySelector('#thank_message');
+          const still_message = document.querySelector('#still_here');
+          console.log(btnElm);
+          btnElm.addEventListener('click',(e)=>{
+            setTimeout(()=>{
+              contact_troll_text.classList.remove('d-none');
+              setTimeout(()=>{
+                contact_troll_text.classList.add('d-none');
+                thank_message.classList.remove('d-none'); 
+                setTimeout(()=>{
+                   thank_message.classList.add('d-none');
+                   still_message.classList.remove('d-none');
+                },4000)
+              },5000)
+            },1000);
+          })
           </script>
         </div>
         </div>
