@@ -42,7 +42,6 @@
             <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
             <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
             <li><a href="#project"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
-            <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
     </nav>
     <!-- .nav-menu -->
@@ -79,7 +78,7 @@
                          style="height:310px;border-radius: 50%;  opacity: 2;">
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0 content">
-                    <h3>Full Stack Web Developer</h3>
+                    <h3 class="text-dark mb-1">Full Stack Web Developer</h3>
                     <div class="row">
                         <div class="col-lg-6">
                             <ul>
@@ -93,19 +92,16 @@
                             <ul>
                                 <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 21</li>
                                 <li><i class="icofont-rounded-right"></i> <strong>Education:</strong> BCA</li>
-                                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong>
+                                <li><i class="icofont-rounded-right"></i> <strong>Email: </strong>
                                     birajmainali10@gmail.com
                                 </li>
-                                <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
                             </ul>
                         </div>
                     </div>
                     <p>
-                        My qualities are persevering, self-spurring, and devoted to my work. I generally attempt to
-                        develop myself be it actually or expertly, attempt to gain from my errors. I'm apathetic just
-                        for those work which I'm not intrigued by. I am a hopeful business visionary who buys in to work
-                        in innovation fields. I will likely be one reason for the accomplishment of the association and
-                        I need to consider my to be as a benchmark to different associations. That is about me.
+                        Web Developer with 3 years of experience in designing and developing, testing, debugging, and
+                        training staff within tends technologies. Proven ability in optimizing web functionality that
+                        improve data retrieval and workflow efficiencies.
                     </p>
                 </div>
             </div>
@@ -144,9 +140,9 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="progress">
-                        <span class="skill">bootstrap<i class="val">100%</i></span>
+                        <span class="skill">bootstrap<i class="val">80%</i></span>
                         <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                                  aria-valuemax="100"></div>
                         </div>
                     </div>
@@ -199,7 +195,7 @@
             const cardElemTemplate = document.querySelector("#projects_template");
             repos.forEach(x => {
                 const cardElem = cardElemTemplate.content.cloneNode(true);
-                cardElem.querySelector(".card").setAttribute('href',x.Url);
+                cardElem.querySelector(".card").setAttribute('href', x.Url);
                 cardElem.querySelector(".Name").textContent = `${x.Name}  [ ${x.Lang} ]`;
                 cardElem.querySelector(".card-header").textContent = x.Description;
                 wrapper.append(cardElem);
@@ -213,177 +209,72 @@
         <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h2>Resume</h2>
-                <p>Web Developer with 3 years of experience in designing and developing, testing,
-                    debugging, and training staff within tends technologies. Proven ability in optimizing web
-                    functionality that improve data retrieval and workflow efficiencies.</p>
             </div>
             <div class="row">
                 <div class="col-lg-6">
                     <h3 class="resume-title">Summary</h3>
                     <div class="resume-item pb-0">
-                        <h4>Biraj Mainali</h4>
-                        <p><em>Innovative and deadline-driven Full stack web developer with 2+ years of experience
-                            designing and developing user-centered digital/print marketing material from initial concept
-                            to final, polished deliverable.</em></p>
+                        <h4>Personal Information</h4>
+                        <p>Innovative and deadline-driven Full stack web developer with 2+ years of experience
+                            designing and developing financial and Inventory management software's </p>
                         <ul>
-                            <li>Birtamod-4,Jhapa Nepal</li>
-                            <li>(+977) 9880687994</li>
-                            <li>birajmainali10@gmail.com</li>
+                            <li><span class="font-weight-bold">Address: </span> Birtamod-4,Jhapa Nepal</li>
+                            <li><span class="font-weight-bold">Contact: </span> +9779880687994</li>
+                            <li><span class="font-weight-bold">Website: </span> birajmainali10@gmail.com</li>
                         </ul>
                     </div>
                     <h3 class="resume-title">Education</h3>
                     <div class="resume-item">
-                        <h4> Computer &amp;Science</h4>
-                        <h5>2018 - 2020</h5>
-                        <p><em>Gomendra BirtaModel Higher Secondary School, Birtamod</em></p>
+                        <h4 class="text-capitalize">BCA - Bachelor in Computer Application</h4>
+                        <h5>2019 - Current</h5>
+                        <p><em>Gomendra Multiple College &bull; Purbanchal Univercity</em></p>
                         <p>It is located at Birtamod Municipality 04, Jhapa, Nepal. College-level after the completion
-                            of the SEE/School level is started from Gomendra Birtamodel College. I choose computer
-                            science .I got infinite friends, entertainment, and good relations from this college</p>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Bachelor in &amp; computer Application</h4>
-                        <h5>2020 - recent</h5>
-                        <p><em>Gomendra Multiple College</em></p>
+                            of the SEE/School level is started from Gomendra Multiple College. I choose BCA .I got
+                            infinite friends, entertainment, and good relations from this college</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <h3 class="resume-title">Professional Experience</h3>
                     <div class="resume-item">
-                        <h4>Database Administrator & Quality Assurance</h4>
-                        <h5>2018 - Present</h5>
-                        <p><em>Pratham It Pvt</em></p>
+                        <h4 class="text-capitalize">Database Administrator & Quality Assurance</h4>
+                        <h5>2019 - 2020</h5>
+                        <p><em>Pratham IT System</em></p>
                         <ul>
                             <li>Client Data Security as Maintain Software data Accuracy</li>
                             <li>New Feature enhancement & Product Assurance</li>
                             <li>Product Quality Enhancement</li>
-                            <li>Database design & Optimize Speed</li>
+                            <li>Database Management, Migration</li>
                         </ul>
                     </div>
                     <div class="resume-item">
-                        <h4>FUll Stack Web Developer</h4>
-                        <h5>2019 - now</h5>
-                        <p><em>Peopleperhour,Freelancing,up work,Fiver</em></p>
+                        <h4 class="text-capitalize">FUll Stack Web Developer</h4>
+                        <h5>2020 - Current</h5>
+                        <p><em>Software Developer</em></p>
                         <ul>
-                            <li>Frontend development</li>
-                            <li>Rest Api Integration</li>
-                            <li>Database Management</li>
-                            <li>Backend Development</li>
+                            <li>Backend Development &bull; C# dotnet</li>
+                            <li>FrontEnd Development &bull; <u>JS/VueJs/Boostrap/Css</u></li>
+                            <li>Api Integration and security Management</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-            <div class="section-title">
-                <h2>Contact</h2>
-            </div>
-            <div class="row mt-1">
-                <div class="col-lg-4">
-                    <div class="info">
-                        <div class="address">
-                            <i class="icofont-google-map"></i>
-                            <h4>Location:</h4>
-                            <p>Birtamod-4,Province 1,Nepal</p>
-                        </div>
-                        <div class="email">
-                            <i class="icofont-envelope"></i>
-                            <h4>Email:</h4>
-                            <p>birajmainali10@gmail.com</p>
-                        </div>
-                        <div class="phone">
-                            <i class="icofont-phone"></i>
-                            <h4>Call:</h4>
-                            <p>+977 9880687994</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 mt-5 mt-lg-0">
-                    <form action="#" onSubmit="return false;">
-                        <div class="php-email-form">
-                            <div class="form-row">
-                                <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name"
-                                           placeholder="Your Name" data-rule="minlen:4"
-                                           data-msg="Please enter at least 4 chars"/>
-                                    <div class="validate"></div>
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                           placeholder="Your Email" data-rule="email"
-                                           data-msg="Please enter a valid email"/>
-                                    <div class="validate"></div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject"
-                                       placeholder="Subject" data-rule="minlen:4"
-                                       data-msg="Please enter at least 8 chars of subject"/>
-                                <div class="validate"></div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" name="message" rows="5" data-rule="required"
-                                          data-msg="Please write something for us" placeholder="Message"></textarea>
-                                <div class="validate"></div>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class="contact-message-send">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                    <br>
-                    <span id="contact-troll-text" class="d-none text-primary" style="float: right">
-                don't think I wrote the code to handle form submit. Please just email or call me.
-               </span>
-                    <span id="thank_message" class="d-none text-primary" style="float: right">
-                Thanks For Visiting my Website
-               </span>
-                    <span id="still_here" class="d-none text-primary" style="float: right">
-                 Seriously are you still here :)
-               </span>
-                </div>
-                <br><br>
-            </div>
-            <script>
-                const btnElm = document.querySelector('.contact-message-send');
-                const contact_troll_text = document.querySelector('#contact-troll-text');
-                const thank_message = document.querySelector('#thank_message');
-                const still_message = document.querySelector('#still_here');
-                console.log(btnElm);
-                btnElm.addEventListener('click', (e) => {
-                    setTimeout(() => {
-                        contact_troll_text.classList.remove('d-none');
-                        setTimeout(() => {
-                            contact_troll_text.classList.add('d-none');
-                            thank_message.classList.remove('d-none');
-                            setTimeout(() => {
-                                thank_message.classList.add('d-none');
-                                still_message.classList.remove('d-none');
-                            }, 4000)
-                        }, 5000)
-                    }, 1000);
-                })
-            </script>
-        </div>
-    </section>
+
     <!-- End Contact Section -->
 </main>
 <!-- End #main -->
 <!-- ======= Footer ======= -->
 <footer id="footer">
-    <div class="container">
-        <h4>| Biraj Mainali | Full Stack Web Developer </h4>
-        <p>Thanks For Visiting my Website</p>
-        <div class="social-links">
-            <a href="https://twitter.com/mainali_biraj" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.facebook.com/biraj.Ecoder" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.instagram.com/mainali_biraj" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="https://t.me/birajmainali"><i class="fa fa-telegram" target="_blank"></i></a>
-            <a href="https://linkedin.com/in/birajmainali"><i class="fa fa-linkedin" target="_blank"></i></a>
-        </div>
-        <div class="copyright">
-            &copy; Copyright <strong><span>Biraj Mainali</span></strong>. All Rights Reserved
+    <div class="container ">
+        <h4>Biraj Mainali Full Stack Web Developer</h4>
+        <div class="social-links mt-4">
+            <a href="https://twitter.com/mainali_biraj" target="_blank"><i class="fa fa-twitter text-white"></i></a>
+            <a href="https://www.facebook.com/biraj.Ecoder" target="_blank"><i
+                    class="fa fa-facebook text-white"></i></a>
+            <a href="https://www.instagram.com/mainali_biraj" target="_blank"><i class="fa fa-instagram text-white"></i></a>
+            <a href="https://t.me/birajmainali"><i class="fa fa-telegram text-white" target="_blank"></i></a>
+            <a href="https://linkedin.com/in/birajmainali"><i class="fa fa-linkedin text-white" target="_blank"></i></a>
         </div>
     </div>
 </footer>
